@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap-5.2.2-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./index.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="row container shadow mx-auto p-5">
+        <div class="div-img col-sm-12 col-md-6 border">
+            s
+        </div>
+        <div class="div-img col-sm-12 col-md-6 p-2">
+            <div class="d-flex" style="justify-content: center; gap: 70px;">
+                <h5  onclick="dinpOne()" style="cursor: pointer;">Sign Up</h5>
+                <h5  onclick="dinpTwo()" style="cursor: pointer;">Log In</h5>
+            </div>
+            <div class="inp-div" style="display: none;">
+                <p id="fnLabel">Full name</p>
+                <input type="text" name="" id="fn" class="form-control" style="border-radius: 0px !important;">
+                <p>User name</p>
+                <input type="text" name="" id="un" class="form-control" style="border-radius: 0px !important;">
+                <p>Phone number</p>
+                <input type="text" name="" id="pnum" class="form-control" style="border-radius: 0px !important;">
+                <p>Password</p>
+                <input type="text" name="" id="pss" class="form-control" style="border-radius: 0px !important;">
+                <p>Already have an account <a href="">Log in</a></p>
+                <button class="btn btn-success mt-3 w-100" onclick="signupBtn()">Sign up</button>
+            </div>
+
+            <div class="inp-div-2" style="display: none;">
+                <p>Phone number</p>
+                <input type="text" name="" id="pnlog" class="form-control" style="border-radius: 0px !important;">
+                <p>Password</p>
+                <input type="text" name="" id="pslog" class="form-control" style="border-radius: 0px !important;">
+                <p>Don't have an account <a href="">Sign Up</a></p>
+                <button class="btn btn-success mt-3 w-100" onclick="loginBtn()">Log In</button>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>

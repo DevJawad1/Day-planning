@@ -1,0 +1,47 @@
+.addNoteBox, .editNoteBox, .addTodoBox, .editTodoBox{
+    position: absolute;
+    z-index: 5;
+    width: 70%; height: auto;
+    left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: -30px;
+    animation: noteaddBox 0.2s linear 1  forwards;
+    display: none;
+    border: 1px solid;
+    background: white;
+    visibility: hidden;
+}
+.note-code, .todo-code{
+    display: none;
+}
+@keyframes noteaddBox {
+    100%{
+        margin-top: 0px;
+        visibility: visible;
+    }
+}
+input, textarea{
+    border-radius: 0px !important;
+}
+
+@media (max-width:600px) {
+    .container{
+        position: absolute
+    }
+    .container .car{
+        overflow-x: scroll;
+        height: 47vh !important;
+    }
+    .car2{
+        border-top: 1px solid !important;
+    }
+    .addNoteBox, .editNoteBox{
+        width: 95%;
+    }
+    #displayTodo{
+        font-size: 13px;
+    }
+    #displayTodo button{
+        font-size: 13px;
+    }
+}

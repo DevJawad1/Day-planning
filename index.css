@@ -1,0 +1,10 @@
+p{
+    position: relative;
+    top: 15px;
+}
+input{
+    transition: all 1s ease;
+    text-transform: capitalize;
+    border: none !important;
+    border-bottom: 1px solid gray !important;
+}

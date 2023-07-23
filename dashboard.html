@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap-5.2.2-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./dash.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="d-flex mt-2 fixed-top bg-white" style="justify-content: center; gap: 100px; margin-top: 0px !important;">
+        <h4 style="cursor: pointer;" onclick="note()">Note</h4>
+        <h4 style="cursor: pointer;" onclick="todo()">Todo</h4>
+    </div>
+
+    <div class="note-code">
+        <div class="container mt-5 shadow">
+            <button class="btn btn-success addNoteBtn mt-3" onclick="displayAddNoteBox()">Add Note +</button>
+            <div class="row">
+                <div class="car col-sm-12 col-md-6 p-3">
+                    <div id="displayNote" class="mt-4"></div>
+                </div>
+    
+                
+                <div class="car car2 col-sm-12 col-md-6 p-3" >
+                    <div id=""class="mt-4">Note content</div>
+                    <div id="displayaNote" class="mt-4"></div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- note adding container -->
+    
+        <div class="addNoteBox shadow p-2">
+            <input type="text" name="" id="tit" placeholder="Title" class="form-control"> <br>
+            <textarea name="" id="ctn" cols="30" rows="10" placeholder="Write your note" class="form-control"></textarea>
+            <button class="btn btn-success mt-3 w-100" onclick="addNoteBtn()" style="cursor: pointer;">Done</button>
+        </div>
+    
+        <div id="editingdiv"></div>
+    </div>
+    
+    <div class="todo-code">
+        <div class="container mt-5 shadow">
+            <button class="btn btn-success addNoteBtn mt-3" onclick="displayAddTodoBox()">Add Todo +</button>
+            <div class="row">
+                <div class="p-3">
+                    <div id="displayTodo" class="mt-4"></div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- todo adding container -->
+    
+        <div class="addTodoBox shadow p-2">
+            <input type="text" name="" id="todoCtn" placeholder="Todo content" class="form-control"> <br>
+            <input type="time" name="" id="todoTm" placeholder="Set Time" class="form-control"> <br>
+            <button class="btn btn-success mt-3 w-100" onclick="addTodoBtn()" style="cursor: pointer;">Done</button>
+        </div>
+    
+        <div id="todoeditingdiv"></div>
+    </div>
+    
+    <script src="dash.js"></script>
+</body>
+
+</html>
